@@ -3475,7 +3475,7 @@ NYM.feed = {
   init : function(url, callback) {
     var self = this;
 
-    NYM.Utils.queryNewAPI(url, this.renderNewsFeeds, callback);
+    NYM.Utils.queryAPI(url, this.renderNewsFeeds, callback);
 
     this.setLatestNewsDateTimeAndFlags();
 
@@ -3644,7 +3644,7 @@ if (typeof NYM === 'undefined') NYM = {};
 NYM.homepage = {
   url : {
     mostPopular : 'http://api.nymag.com/content/mostviewed/lastday?size=7',
-    blogFeeds : 'http://api.qa.nymetro.com/v1/content/articles/?group-by=brand'
+    blogFeeds : 'http://api.qa.nymetro.com/content/latest'//'http://api.qa.nymetro.com/v1/content/articles/?group-by=brand'
   },
 
   breakpoints : {
